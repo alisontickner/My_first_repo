@@ -29,6 +29,20 @@ ul {
     margin: 0 auto;
 }
 
+.flexContainer {
+    display:flex; 
+}
+
+.skill {
+    width: 33%;
+    padding: 40px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
 footer {
     background-color: #a7b4aa;
 }
@@ -37,4 +51,14 @@ footer ul {
     display: inline-block;
     vertical-align: top;
     margin-left: auto;
+}
+
+@media only screen and (max-width: 600px){
+    .flexContainer{
+        flex-direction: column;
+    }
+
+    .workGrid{
+        grid-template-columns: 100%;
+    }
 }
